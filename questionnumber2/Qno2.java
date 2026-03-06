@@ -14,7 +14,7 @@ public class Qno2 {
     private static int maxSum;
 
     public static int maxPathSum(TreeNode root) {
-        maxSum = Integer.MIN_VALUE;  // Reset for each call
+        maxSum = Integer.MIN_VALUE;  
         dfs(root);
         return maxSum;
     }

@@ -20,13 +20,13 @@ public class Qno4 {
 
     public static void main(String[] args) {
 
-        // Define energy sources
+        
         List<EnergySource> sources = new ArrayList<>();
         sources.add(new EnergySource("Solar", 50, 2.0, true));
         sources.add(new EnergySource("Hydro", 40, 3.0, true));
         sources.add(new EnergySource("Diesel", 100, 6.0, false));
 
-        // District demand per hour
+        
         Map<String, Integer> demand = new HashMap<>();
         demand.put("DistrictA", 60);
         demand.put("DistrictB", 30);
@@ -36,7 +36,7 @@ public class Qno4 {
 
     public static void allocateEnergy(List<EnergySource> sources, Map<String, Integer> demand) {
 
-        // Sort sources by cost (Greedy strategy)
+    
         sources.sort(Comparator.comparingDouble(s -> s.costPerUnit));
 
         double totalCost = 0;
